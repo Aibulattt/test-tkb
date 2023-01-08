@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript" src="./index.js" defer> </script>
+    <title>Test</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <h2>Меню</h2>
+        
+            <nav class="menu__nav">
+                <ul class="menu__nav-list">
+                    <li class="nav__list-item">Пункт 1</li>
+                    <li class="nav__list-item">Пункт 2</li>
+                    <li class="nav__list-item">Пункт 3</li>
+                    <li class="nav__list-item">Пункт 4</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <header class="header">
+                <div class="header__search">
+                    Поиск
+                    <input type="search" />
+                </div>
+            </header>
+            <div class="table__wrapper">
+                <form class="form" id="form" name="form">
+                    <table class="table" id="table">
+                        <thead>
+                            <th>ФИО</th>
+                            <th>Должность</th>
+                            <th>Возраст</th>
+                            <th>Компетенции</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table__column"><input required="true" name="name" type="text" /></td>
+                                <td class="table__column"><select required name="position">
+                                    <option>Аналитик</option>
+                                    <option>Менеджер</option>
+                                    <option>Программист</option>
+                                    <option>Юрист</option>
+                                </select></td>
+                                <td class="table__column"><input required name="age" type="number" /></td>
+                                <td class="table__column"><textarea required name="competencies" class="table__comment-input"></textarea></td>
+                                <td class="table__column"><button data-index="1" class="delete-btn" id="delete-btn" type="button">Удалить</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="table__action-button">
+                        <button class="table__add-btn" id="add-btn" type="button">Добавить</button>
+                        <button class="table__submit-btn" id="submit-btn" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
